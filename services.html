@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - B3B Experia</title>
+  <link rel="stylesheet" href="design.css">
+  <style>
+    .services-hero {
+      background: linear-gradient(135deg, #0048ff 0%, #0074e4 100%);
+      padding: 60px 40px;
+      text-align: center;
+      color: white;
+    }
+
+    .services-hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .services-hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .services-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 40px;
+    }
+
+    .service-detail {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .service-detail.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-image {
+      width: 50%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      width: 50%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .service-content h2 {
+      color: #0048ff;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .service-content ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .service-content li {
+      padding: 8px 0;
+      color: #666;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .service-content li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #0048ff;
+      font-weight: bold;
+    }
+
+    .service-content p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .service-btn {
+      background: #0048ff;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      align-self: flex-start;
+      transition: background 0.3s;
+    }
+
+    .service-btn:hover {
+      background: #0038cc;
+    }
+
+    @media (max-width: 768px) {
+      .service-detail {
+        flex-direction: column;
+      }
+
+      .service-detail.reverse {
+        flex-direction: column;
+      }
+
+      .service-image,
+      .service-content {
+        width: 100%;
+      }
+
+      .service-image {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">B3B Experia</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="capstone.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="services.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="#buy">Buy a Home</a></li>
+            <li><a href="#sell">Sell a Home</a></li>
+            <li><a href="#rent">Rent a Home</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="services-hero">
+    <h1>Our Services</h1>
+    <p>Comprehensive real estate solutions tailored to your needs</p>
+  </section>
+
+  <!-- Services Details -->
+  <section class="services-container">
+    <!-- Buy Service -->
+    <div class="service-detail" id="buy">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600" alt="Buy a Home" class="service-image">
+      <div class="service-content">
+        <h2>Buy a Home</h2>
+        <p>Find your dream property among thousands of verified listings. Our expert agents guide you through the entire buying process with transparency and professionalism.</p>
+        <ul>
+          <li>Access to exclusive property listings</li>
+          <li>Virtual property tours and 360° views</li>
+          <li>Expert negotiation support</li>
+          <li>Legal documentation assistance</li>
+          <li>Financing and loan guidance</li>
+          <li>Post-purchase support</li>
+        </ul>
+        <button class="service-btn">Explore Properties</button>
+      </div>
+    </div>
+
+    <!-- Sell Service -->
+    <div class="service-detail reverse" id="sell">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Sell a Home" class="service-image">
+      <div class="service-content">
+        <h2>Sell a Home</h2>
+        <p>Maximize your property's value with our comprehensive selling solutions. We handle marketing, negotiations, and documentation to ensure a smooth sale.</p>
+        <ul>
+          <li>Professional property valuation</li>
+          <li>Advanced marketing strategies</li>
+          <li>Professional photography and videos</li>
+          <li>Qualified buyer matching</li>
+          <li>Negotiation expertise</li>
+          <li>End-to-end transaction support</li>
+        </ul>
+        <button class="service-btn">List Your Property</button>
+      </div>
+    </div>
+
+    <!-- Rent Service -->
+    <div class="service-detail" id="rent">
+      <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600" alt="Rent a Home" class="service-image">
+      <div class="service-content">
+        <h2>Rent a Home</h2>
+        <p>Find the perfect rental property for your lifestyle. Our platform connects you with trusted landlords and offers hassle-free renting solutions.</p>
+        <ul>
+          <li>Wide selection of rental properties</li>
+          <li>Verified landlord profiles</li>
+          <li>Online rental application</li>
+          <li>Lease agreement templates</li>
+          <li>Online rent payment solutions</li>
+          <li>Tenant and landlord support</li>
+        </ul>
+        <button class="service-btn">Browse Rentals</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 B3B Experia | All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Careers</a>
+    </div>
+  </footer>
+
+</body>
+</html>

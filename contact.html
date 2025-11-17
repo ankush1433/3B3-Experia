@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - B3B Experia</title>
+  <link rel="stylesheet" href="design.css">
+  <style>
+    .contact-hero {
+      background: linear-gradient(135deg, #0048ff 0%, #0074e4 100%);
+      padding: 80px 40px;
+      text-align: center;
+      color: white;
+    }
+
+    .contact-hero h1 {
+      font-size: 44px;
+      margin-bottom: 20px;
+    }
+
+    .contact-hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 40px;
+    }
+
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      color: #0048ff;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: "Segoe UI", sans-serif;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #0048ff;
+      box-shadow: 0 0 0 2px rgba(0, 72, 255, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-submit {
+      background: #0048ff;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s;
+      width: 100%;
+    }
+
+    .form-submit:hover {
+      background: #0038cc;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .info-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .info-card h3 {
+      color: #0048ff;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .info-card p {
+      color: #666;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .info-card .icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .locations {
+      margin-top: 60px;
+    }
+
+    .locations h2 {
+      color: #0048ff;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .location-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-left: 4px solid #0048ff;
+    }
+
+    .location-card h3 {
+      color: #0048ff;
+      margin-bottom: 15px;
+    }
+
+    .location-card p {
+      color: #666;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .faq {
+      margin-top: 60px;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .faq h2 {
+      color: #0048ff;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      color: #0048ff;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .faq-answer {
+      color: #666;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">B3B Experia</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="capstone.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <h1>Get In Touch</h1>
+    <p>We're here to help. Contact us with any questions or inquiries.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-container">
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <h3>Headquarters</h3>
+          <p>B3B Experia HQ<br>Cyber City, Building A<br>Gurgaon, Haryana 122001<br>India</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📞</div>
+          <h3>Phone</h3>
+          <p>+91 98765 43210<br>+91 11 4567 8900</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📧</div>
+          <h3>Email</h3>
+          <p>support@b3bexperia.com<br>sales@b3bexperia.com<br>info@b3bexperia.com</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">⏰</div>
+          <h3>Business Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Office Locations -->
+    <div class="locations">
+      <h2>Our Offices</h2>
+      <div class="location-grid">
+        <div class="location-card">
+          <h3>Gurgaon</h3>
+          <p>📍 Cyber City, Gurgaon, Haryana</p>
+          <p>📞 +91 98765 43210</p>
+          <p>Serving Delhi NCR region with expertise in premium properties</p>
+        </div>
+        <div class="location-card">
+          <h3>Mumbai</h3>
+          <p>📍 BKC, Mumbai, Maharashtra</p>
+          <p>📞 +91 98765 43211</p>
+          <p>Specializing in Mumbai's luxury real estate market</p>
+        </div>
+        <div class="location-card">
+          <h3>Bangalore</h3>
+          <p>📍 Koramangala, Bangalore, Karnataka</p>
+          <p>📞 +91 98765 43212</p>
+          <p>Expert guidance for tech city's growing real estate sector</p>
+        </div>
+        <div class="location-card">
+          <h3>Noida</h3>
+          <p>📍 Sector 62, Noida, Uttar Pradesh</p>
+          <p>📞 +91 98765 43213</p>
+          <p>Leading property consultants for NCR's satellite cities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-question">Q: What are your service charges?</div>
+        <div class="faq-answer">We offer competitive and transparent pricing. Our service charges vary based on the property value and services requested. Please contact our team for a customized quote.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Q: How long does the buying process take?</div>
+        <div class="faq-answer">The typical buying process takes 30-60 days from property selection to legal handover, depending on documentation and financing requirements.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Q: Are all properties verified?</div>
+        <div class="faq-answer">Yes, all properties listed on B3B Experia undergo thorough verification including legal documentation, ownership proof, and property authenticity checks.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Q: Do you provide financing assistance?</div>
+        <div class="faq-answer">Yes, we partner with leading financial institutions to provide home loan guidance and assistance throughout the financing process.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Q: How can I list my property?</div>
+        <div class="faq-answer">You can list your property by signing up on our portal, providing property details, uploading photos/documents, and our team will verify and activate your listing.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 B3B Experia | All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Careers</a>
+    </div>
+  </footer>
+
+</body>
+</html>
